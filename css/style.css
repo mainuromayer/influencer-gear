@@ -1,0 +1,361 @@
+/* -------
+  Fonts
+---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+/* -------------------------
+  common style or utilities
+--------------------------- */
+:root {
+  --dark-color: #3A3A3A;
+  --background-color: #fc6743;
+  --white-color: #ffffff;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+h1 , h2, h3, p {
+  color: var(--dark-color);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+
+
+/* ------------
+  Header Style
+--------------- */
+header {
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+header li {
+	list-style: none;
+	margin-right: 40px;
+}
+header li a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+header li a i {
+  font-size: 20px;
+}
+
+.header-logo {
+  font-size: 24px;
+  margin-top: 3px;
+}
+
+.header-icon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+ /* ------------Section-Influencer--------------- */
+ .section-influencer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.section-influencer h1 {
+  font-size: 52px;
+  margin: 0;
+}
+.section-influencer .section-influ-detail p {
+  margin-bottom: 2em;
+}
+.section-influencer .section-influ-detail a {
+	text-decoration: none;
+	background-color: var(--background-color);
+	color: var(--white-color);
+	padding: 10px 15px;
+	border-radius: 30px;
+}
+
+.section-influ-detail {
+	max-height: 500px;
+	border-radius: 10px;
+	margin: 15px;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.section-influ-image {
+  max-height: 500px;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 10px;
+	overflow: hidden;
+	justify-content: center;
+	display: flex;
+  position: relative;
+}
+.section-influ-image .circle {
+  width: 350px;
+  height: 350px;
+}
+.section-influ-image .camera {
+  position: absolute;
+  width: 330px;
+  height: 340px;
+  cursor: pointer;
+}
+.section-influ-image .camera:hover {
+  width: 370px;
+  height: 370px;
+  transition: width 2s, height 2s;
+}
+
+
+
+/* -------------Logos---------------- */
+.logos {
+	padding: 3em;
+	display: flex;
+	justify-content: center;
+}
+
+.logos img {
+	width: 50px;
+	padding: 50px;
+	height: 50px;
+}
+hr {
+  border: 1px solid #D1D1D1;
+  margin-bottom: 27px;
+}
+
+
+
+
+/* -------------
+   Album Style
+  -------------- */
+  article {
+    padding-bottom: 3em;
+  }
+  .album-section-title {
+    text-align: center;
+    padding: 15px 0;
+  }
+  .albums {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+  }
+  .album {
+    box-shadow: 0px 0px 3px #c1bebe;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .album .album-banner img {
+    width: 100%;
+    height: 300px;
+  }
+  .album-info {
+    display: flex;
+    align-items: center;
+  }
+  .album-info span {
+    padding-left: 10px;
+    margin-top: 3px;
+  }
+  .fa-star {
+    font-size: 12px;
+  }
+  .fa-star.filled {
+    color: #FFC014;
+  }
+  .fa-star.empty {
+    color: #AEAEAE;
+  }
+  .article-footer {
+    text-align: right;
+    padding: 10px;
+  }
+  .article-footer a {
+    text-align: right;
+    color: var(--background-color);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  
+
+
+/* ---------------
+   Section Input
+  --------------- */
+  .section-input {
+    text-align: center;
+    padding: 0 0 5em 0;
+  }
+  .section-input input[type=email] {
+    border: 0.5px solid var(--background-color);
+    color: var(--background-color);
+    border-radius: 5px;
+    height: 30px;
+    width: 15em;
+    padding: 10px;
+    margin: 10px;
+  }
+  .section-input input[type=email]:focus {
+    color: var(--dark-color);
+  }
+
+  .section-input input[type="submit"] {
+    border: 0.5px solid var(--background-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    height: 50px;
+    width: 15em;
+    padding: 10px;
+    margin: 10px;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+
+
+/* ------------
+   Footer Style
+  ------------- */
+  footer {
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 20px 0;
+  }
+  footer h1 {
+    color: var(--white-color);
+  }
+  footer h1 {
+    font-size: 24px;
+  }
+  footer p {
+    color: var(--white-color);
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 2em;
+  }
+
+  footer a {
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 12px;
+    font-weight: 700;
+  }
+
+
+
+/* --------------
+   Media Queries
+  --------------- */
+/* Mobile Devices */
+@media only screen and (max-width: 668px) {
+ /* ----------------------------------------- */
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .header-logo {
+    padding-bottom: 20px;
+  }
+  header li {
+    width: 100%;
+    margin-top: 10px;
+  }
+  header li a i {
+    margin-top: 20px;
+  }
+
+  /* -------------------------------------- */
+
+  .section-influencer {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .section-influ-detail {
+    overflow: hidden;
+  }
+  .section-influ-image {
+    overflow: hidden;
+  }
+
+  /* -------------------------------------- */
+
+  .albums {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .album .album-banner img {
+    width: 100%;
+    height: 300px;
+  }
+
+
+}
+
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width: 992px) {
+
+  /* ------------------------------------ */
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .header-logo {
+    padding-bottom: 20px;
+  }
+  header li {
+    width: 100%;
+    margin-top: 10px;
+  }
+  header li a i {
+    margin-top: 20px;
+  }
+
+    /* ------------------------------------- */
+
+  .section-influencer {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .section-influ-detail {
+    overflow: hidden;
+  }
+  .section-influ-image {
+    overflow: hidden;
+  }
+
+  /* ----------------------------------------- */
+
+  .albums {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .album .album-banner img {
+    width: 100%;
+    height: 265px;
+  }
+
+}
+
